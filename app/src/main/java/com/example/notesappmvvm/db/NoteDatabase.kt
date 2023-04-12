@@ -11,7 +11,7 @@ import androidx.room.RoomDatabase
 )
 abstract class NoteDatabase: RoomDatabase() {
 
-    abstract fun notesDao(): NotesDao
+    abstract fun getNotesDao(): NotesDao
 
     companion object{
 
