@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white_1"
-    tools:context=".activities.AddEditActivity">
+    tools:context=".activities.fragments.AddFragment">
 
     <EditText
         android:id="@+id/ETnoteTitle"
@@ -21,7 +20,7 @@
         android:id="@+id/ETnoteDescription"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/BTNaddUpdate"
+        android:layout_above="@id/BTNapply"
         android:layout_below="@id/ETnoteTitle"
         android:layout_margin="10dp"
         android:gravity="start|top"
@@ -33,16 +32,18 @@
         android:textColorHint="@color/purple_1" />
 
     <Button
-        android:id="@+id/BTNaddUpdate"
+        android:id="@+id/BTNapply"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/custom_button"
-
         android:text="Apply"
-        android:textColor="@color/white_1"
         android:textAllCaps="false"
+        android:textColor="@color/white_1"
         android:textSize="18sp" />
-
 </RelativeLayout>
